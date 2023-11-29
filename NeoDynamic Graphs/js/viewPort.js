@@ -5,6 +5,14 @@ class ViewPort {
 
         this.zoom = 1;
 
+        this.drag = {
+            start: new Point(0,0),
+            end: new Point(0,0),
+            offset: new Point(0,0),
+            active: false,
+
+        }
+
         this.#addEventListeners();
     }
 
